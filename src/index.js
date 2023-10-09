@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+    
+      {/* Content shown on all routes goes here */}
+
+      <Routes>
+        {/* Content shown on the homepage goes here */}
+        <Route path='/' element={<App />} />
+
+        {/* Content shown on the API fetch route goes here */}
+
+      </Routes>
+
+    </BrowserRouter>
+    
   </React.StrictMode>
 );
 
