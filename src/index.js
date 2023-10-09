@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LocationSearch from './pages/LocationSearch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <BrowserRouter>
-    
+
       {/* Content shown on all routes goes here */}
 
       <Routes>
@@ -18,6 +19,7 @@ root.render(
         <Route path='/' element={<App />} />
 
         {/* Content shown on the API fetch route goes here */}
+        <Route path='/location/search/:location' element={<LocationSearch />} />
 
       </Routes>
 
