@@ -8,7 +8,7 @@ import Icon from './Icon';
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
 
-    if (weatherData) {
+    if (weatherData && weatherData.coord) {
         return (
             <div>
             <div>
