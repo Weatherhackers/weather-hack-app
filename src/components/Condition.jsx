@@ -8,7 +8,7 @@ export default function Condition({ weatherData }) {
                     {weatherData.weather[0].main.toUpperCase()}
                 </p>
                 <p className="location">
-                    {weatherData.name}
+                    {`${weatherData.name}, ${weatherData.sys.country}`}
                 </p>
             </div>
         )

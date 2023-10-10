@@ -30,7 +30,8 @@ export default function WeatherApp() {
                 <div>
                     <SearchBar setWeatherData={setWeatherData} />
                 </div>
-                <h1>City not found</h1>
+                <h1 className="questionMark">?</h1>
+                <h2>No data found</h2>
             </div>
         )
     }
