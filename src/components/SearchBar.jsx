@@ -1,6 +1,7 @@
 import './styling/SearchBar.css'
 
 export default function SearchBar(){
+    
     let apiKey = process.env.REACT_APP_API_KEY;
 
     const search = async () => {

@@ -15,6 +15,7 @@ const WeatherHack = ({ weatherData }) => {
                     {/* Display the weather description from the 'data' prop. */}
                     <p className="hack-description">It is hot!</p>
 
+                    {/* Get weather description from API */}
                     <p className="hack-description">{weatherData.weather[0].description}</p>
 
                 </div>
