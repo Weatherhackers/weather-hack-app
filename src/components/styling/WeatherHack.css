@@ -1,0 +1,30 @@
+.weather-hack {
+    width: 250px;
+    border-radius: 15px;
+    color: black;
+    background-color: #FDCBCA;
+    margin: 20px auto 0 auto;
+    padding: 10px 30px 15px 20px;
+}
+
+.hack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-bi-person-raised-hand {
+    width: 80px;
+    height: 70px;
+
+}
+
+.hack-title {
+   font-size: 25px;
+   letter-spacing: 1px;
+}
+
+.hack-description {
+    font-size: 18px;
+    margin: 5px;
+}

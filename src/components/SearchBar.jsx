@@ -1,7 +1,7 @@
 import './styling/SearchBar.css'
 
 export default function SearchBar(){
-    let key = "9dcad23d635241be56bdf33f12f623b5";
+    let key = "76ae9b44149024fc26a1b6cfd996eeb5";
 
     const search = async () => {
         let element = document.getElementById("searchField");
