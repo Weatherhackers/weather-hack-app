@@ -1,10 +1,20 @@
+import React, { useState } from 'react';
 import SearchBar from "./SearchBar";
-
+import WindSpeed from "./WindSpeed";
+import WeatherDescription from './WeatherDescription';
 
 export default function WeatherApp() {
-    return (
-        <div>
-            <SearchBar />
-        </div>
-    )
+  const [weatherData, setWeatherData] = useState(null);
+
+  return (
+    <div>
+      <div>
+        <SearchBar setWeatherData={setWeatherData} />
+      </div>
+      <div className="descriptionBlock">
+        <WindSpeed windData={weatherData && weatherData.wind} />
+        <WeatherDescription weatherData={weatherData} />
+      </div>
+    </div>
+  )
 }
