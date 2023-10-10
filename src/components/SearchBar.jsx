@@ -1,7 +1,7 @@
 import './styling/SearchBar.css'
 
 export default function SearchBar(){
-    let key = "76ae9b44149024fc26a1b6cfd996eeb5";
+    let apiKey = process.env.REACT_APP_API_KEY;
 
     const search = async () => {
         let element = document.getElementById("searchField");
@@ -9,7 +9,7 @@ export default function SearchBar(){
         {
             return 0;
         }
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element.value}&units=Metric&appid=${key}`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element.value}&units=Metric&appid=${apiKey}`
         
         let response = await fetch(url);
         let data = await response.json();

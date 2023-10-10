@@ -1,8 +1,8 @@
 import "./styling/WeatherHack.css"
 import React from "react";
 
-// Define function component that takes 'data' prop
-const WeatherHack = ({ data }) => {
+// Define function component that takes 'weatherData' prop
+const WeatherHack = ({ weatherData }) => {
     return (
 
         // JSX structur eof the component
@@ -15,7 +15,7 @@ const WeatherHack = ({ data }) => {
                     {/* Display the weather description from the 'data' prop. */}
                     <p className="hack-description">It is hot!</p>
 
-                    {/* <p className="hack-description">{data.weather[0].description}</p>*/}
+                    <p className="hack-description">{weatherData.weather[0].description}</p>
 
                 </div>
                 {/* Display an SVG icon */}
