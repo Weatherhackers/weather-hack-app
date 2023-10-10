@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styling/SearchBar.css';
+import { ApiContext } from '../contexts/ApiContext';
 
 export default function SearchBar({ setWeatherData }) {
-  let key = "9dcad23d635241be56bdf33f12f623b5";
 
+  // API URL
+  const {api} = useContext(ApiContext);
+
+  // API key
+  let apiKey = process.env.REACT_APP_API_KEY;
+
+  // Search function
   const search = async () => {
     let element = document.getElementById("searchField");
     if (element.value === "") {
       return 0;
     }
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element.value}&units=Metric&appid=${key}`;
+    let url = `${api}/weather?q=${element.value}&units=Metric&appid=${apiKey}`;
 
     let response = await fetch(url);
     let data = await response.json();
