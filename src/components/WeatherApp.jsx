@@ -11,7 +11,7 @@ export default function WeatherApp() {
       <div>
         <SearchBar setWeatherData={setWeatherData} />
       </div>
-      <div>
+      <div className="descriptionBlock">
         <WindSpeed windData={weatherData && weatherData.wind} />
         <WeatherDescription weatherData={weatherData} />
       </div>
