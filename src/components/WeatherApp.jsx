@@ -24,6 +24,16 @@ export default function WeatherApp() {
             </div>
             </div>
     )}
+    else if (weatherData && weatherData.cod === "404") {
+        return (
+            <div>
+                <div>
+                    <SearchBar setWeatherData={setWeatherData} />
+                </div>
+                <h1>City not found</h1>
+            </div>
+        )
+    }
     else {
         return(
             <div>
