@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import WindSpeed from "./WindSpeed";
 import WeatherDescription from './WeatherDescription';
 import Temperature from './Temperature';
+import DateTime from './DateTime';
 
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
@@ -13,6 +14,7 @@ export default function WeatherApp() {
         <SearchBar setWeatherData={setWeatherData} />
       </div>
       <div className="temperatureBlock">
+        <DateTime/>
         <Temperature tempData={weatherData} />
       </div>
       <div className="descriptionBlock">
