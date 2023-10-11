@@ -3,6 +3,46 @@ import React from "react";
 
 // Define function component that takes 'weatherData' prop
 const WeatherHack = ({ weatherData }) => {
+
+    // Weather Hack logic
+    function getWeatherHack({weatherData}) {
+        let weatherMain = weatherData.weather[0].main.toLowerCase();
+        switch (weatherMain) {
+            case "thunderstorm":
+                return("Placeholder")
+            case "drizzle":
+                return("Placeholder")
+            case "rain":
+                return("Placeholder")
+            case "snow":
+                return("Placeholder")
+            case "mist":
+                return("Placeholder")
+            case "smoke":
+                return("Placeholder")
+            case "haze":
+                return("Placeholder")
+            case "dust":
+                return("Placeholder")
+            case "fog":
+                return("Placeholder")
+            case "sand":
+                return("Placeholder")
+            case "ash":
+                return("Placeholder")
+            case "squall":
+                return("Placeholder")
+            case "tornado":
+                return("Placeholder")
+            case "clear":
+                return("Have a wonderful day!")
+            case "clouds":
+                return("Bring an umbrella!")
+            default:
+                return("Placeholder")
+        }
+    }
+
     return (
 
         // JSX structur eof the component
@@ -13,7 +53,7 @@ const WeatherHack = ({ weatherData }) => {
                     <p className="hack-title">Weather Hack!</p>
 
                     {/* Display the weather description from the 'data' prop. */}
-                    <p className="hack-description">It is hot!</p>
+                    <p className="hack-description">{getWeatherHack({weatherData})}</p>
 
                     {/* Get weather description from API */}
                     <p className="hack-description">{weatherData.weather[0].description}</p>
@@ -30,5 +70,4 @@ const WeatherHack = ({ weatherData }) => {
     )
 }
 
-export default WeatherHack; 
-
+export default WeatherHack;
