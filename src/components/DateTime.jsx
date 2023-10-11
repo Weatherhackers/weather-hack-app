@@ -7,7 +7,7 @@ export default function DateTime() {
 
     return (
         <div>
-          <p>{currentDate} {currentTime}</p>
+          <p className="datetime">{currentDate} {currentTime}</p>
         </div>
     )
 }

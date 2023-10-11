@@ -4,7 +4,7 @@ export default function Temperature({tempData}) {
         // Return temperature
         return (
             <div>
-               <p>{tempData.main.temp}&deg;C</p>
+               <p className="temperature">{tempData.main.temp}&deg;C</p>
             </div>
         )
     }
