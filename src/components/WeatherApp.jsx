@@ -6,6 +6,7 @@ import Condition from './Condition';
 import Icon from './Icon';
 import Temperature from './Temperature';
 import DateTime from './DateTime';
+import WeatherHack from './WeatherHack';
 
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
@@ -27,6 +28,9 @@ export default function WeatherApp() {
             <div className="descriptionBlock">
                 <WindSpeed windData={weatherData && weatherData.wind} />
                 <WeatherDescription weatherData={weatherData} />
+            </div>
+            <div className="weatherHackBlock">
+                <WeatherHack weatherData={weatherData} />
             </div>
             </div>
     )}
