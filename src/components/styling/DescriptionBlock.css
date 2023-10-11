@@ -1,0 +1,26 @@
+.descriptionBlock {
+  width: 250px;
+  border-radius: 15px;
+  color: black;
+  background-color: #aedcff;
+  margin: 20px auto 0 auto;
+  padding: 10px 30px 15px 20px;
+  font-size: 18px;
+  animation: backgroundShift 5s infinite;
+  background: linear-gradient(45deg, #f8db8a, #33c6ff);
+  background-size: 200% 200%;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}

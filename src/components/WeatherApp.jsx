@@ -7,6 +7,7 @@ import Temperature from './Temperature';
 import DateTime from './DateTime';
 import WeatherHack from './WeatherHack';
 import WeatherHumidity from './WeatherHumidity';
+import "./styling/DescriptionBlock.css";
 
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
