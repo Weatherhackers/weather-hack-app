@@ -1,3 +1,5 @@
+import './styling/Temperature.css';
+
 export default function Temperature({tempData}) {
     // If data exists
     if (tempData) {

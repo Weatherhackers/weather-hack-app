@@ -45,9 +45,7 @@ const WeatherHack = ({ weatherData }) => {
 
     return (
         <div className="hack-container">
-            <div>
-                <p className="hack-title">Weather Hack!</p>
-            </div>
+            <h4 className="hack-title">Weather Hack!</h4>
             <div className="weather-hack">
                 <div className="hack">
                     <div>

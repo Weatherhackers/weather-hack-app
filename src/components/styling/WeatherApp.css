@@ -16,3 +16,17 @@ h1.title {
     background-position-y: 5%, 5%;
     background-repeat: no-repeat;
 }
+
+.weatherDetails {
+    border-radius: 15px;
+    color: black;
+    background-color: #FDCBCA;
+    margin: 20px auto 0 auto;
+    padding: 40px 50px 30px 20px;
+    box-shadow: 0 0 20px rgba(207, 18, 15, 0.3);
+
+    .detailsTitle {
+        letter-spacing: 2px;
+        font-weight: 700;
+     }
+}

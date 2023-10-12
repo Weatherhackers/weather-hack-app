@@ -1,10 +1,11 @@
 .weather-hack {
-    width: 250px;
+    width: 80%;
     border-radius: 15px;
     color: black;
     background-color: #FDCBCA;
-    margin: 20px auto 0 auto;
-    padding: 40px 50px 30px 20px;
+    margin: 20px auto;
+    padding: 40px 30px 30px 20px;
+    box-sizing: border-box;
     box-shadow: 0 0 20px rgba(207, 18, 15, 0.3);
 }
 
@@ -19,16 +20,13 @@
 }
 
 .hack-title {
-   font-size: 25px;
    letter-spacing: 2px;
-   font-family: 'Martian Mono', monospace;
-   font-size: 30px;
    font-weight: 700;
+   text-transform: uppercase;
 }
 
 .hack-description {
     font-size: 22px;
     margin: 5px;
-    font-family: 'Martian Mono', monospace;
     font-weight: 700;
 }
