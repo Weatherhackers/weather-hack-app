@@ -43,11 +43,11 @@ export default function SearchBar({ setWeatherData }) {
             />
           </Col>
           <Col xs={1}>
-            <Button size="lg" className="shadow-sm" id="searchIconBtn">
+            <Button size="lg" className="shadow-sm rounded-circle" id="searchIconBtn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="30"
+                height="30"
                 fill="currentColor"
                 class="bi bi-search searchIcon"
                 viewBox="0 0 16 16"

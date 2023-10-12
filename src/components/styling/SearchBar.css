@@ -4,17 +4,19 @@
 
 #searchIconBtn {
     background-color: #a5bad5;
-    border-radius: 50%;
     border: 0;
+    padding: 20px 20px;
 
     .searchIcon {
         color: #414a55;
     }
 }
 
+
 #searchField {
     background-color: #5f91cf;
-    border-radius: 30px;
+    border-radius: 15px;
+    padding: 20px;
     border-style: none;
     color: #fff;
 }

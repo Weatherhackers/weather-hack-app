@@ -62,7 +62,7 @@ export default function WeatherApp() {
     );
   } else {
     return (
-      <Container>
+      <Container className="landing">
         <Row>
           <Col>
             <h1 className="title">Weather Hackers</h1>
