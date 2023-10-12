@@ -14,66 +14,50 @@ import { WeatherForecast } from "./WeatherForecast";
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
 
-  if (weatherData && weatherData.coord) {
-    return (
-        <Container>
-            <Row>
-                <Col>
+    if (weatherData && weatherData.coord) {
+        return (
+            <div>
+            <div>
+                <SearchBar weatherData={weatherData} setWeatherData={setWeatherData} />
+            </div>
+            <div className="weatherAndIcon">
+                <Condition weatherData={weatherData} />
+                <Icon weatherData={weatherData}/>
+            </div>
+            <div className="temperatureBlock">
+              <DateTime />
+              <Temperature tempData={weatherData} />
+            </div>
+            <div className="descriptionBlock">
+                <WindSpeed windData={weatherData && weatherData.wind} />
+                <WeatherHumidity weatherData={weatherData}/>
+            </div>
+            <div className="weatherHackBlock">
+                <WeatherHack weatherData={weatherData} />
+            </div>
+            </div>
+    )}
+    else if (weatherData && weatherData.cod === "404") {
+        return (
+            <div>
+                <div>
                     <SearchBar setWeatherData={setWeatherData} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Condition weatherData={weatherData} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <DateTime />
-                </Col>
-                <Col>
-                    <Temperature tempData={weatherData} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Icon weatherData={weatherData} />
-                </Col>
-                <Col>
-                    <WindSpeed windData={weatherData && weatherData.wind} />
-                    <WeatherHumidity weatherData={weatherData} />
-                    <WeatherHack weatherData={weatherData} />
-                </Col>
-            </Row>
-            <Row>
-              <WeatherForecast />
-            </Row>
-        </Container>
-    );
-  } else if (weatherData && weatherData.cod === "404") {
-    return (
-      <div>
-        <div>
-          <SearchBar setWeatherData={setWeatherData} />
-        </div>
-        <h1 className="questionMark">?</h1>
-        <h2>No data found</h2>
-      </div>
-    );
-  } else {
-    return (
-      <Container className="landing">
-        <Row>
-          <Col>
-            <h1 className="title">Weather Hackers</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <SearchBar setWeatherData={setWeatherData} />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+                </div>
+                <h1 className="questionMark">?</h1>
+                <h2>No data found</h2>
+            </div>
+        )
+    }
+    else {
+        return(
+            <div>
+                <div>
+                    <SearchBar setWeatherData={setWeatherData} />
+                </div>
+                <h1 className="title">
+                    WEATHER HACKERS
+                </h1>
+            </div>
+        )
+    }
 }
