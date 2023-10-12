@@ -1,0 +1,32 @@
+h1.title {
+    font-size:72px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.landing {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../assets/clouds.png'), url('../../assets/new-moon.png');
+    background-size: 20dvw, 15dvw;
+    background-position: left top, left top;
+    background-position-x: 15%, 5%;
+    background-position-y: 5%, 5%;
+    background-repeat: no-repeat;
+}
+
+.weatherDetails {
+    border-radius: 15px;
+    color: black;
+    background-color: #FDCBCA;
+    margin: 20px auto 0 auto;
+    padding: 40px 50px 30px 20px;
+    box-shadow: 0 0 20px rgba(207, 18, 15, 0.3);
+
+    .detailsTitle {
+        letter-spacing: 2px;
+        font-weight: 700;
+     }
+}

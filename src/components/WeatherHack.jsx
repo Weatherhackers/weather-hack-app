@@ -11,7 +11,7 @@ const WeatherHack = ({ weatherData }) => {
             case "thunderstorm":
                 return("When thunder roars, go indoors!")
             case "drizzle":
-                return("Drizzel alert: Bring an umbrella")
+                return("Drizzle alert: Bring an umbrella")
             case "rain":
                 return("Bring an umbrella!")
             case "snow":
@@ -45,9 +45,7 @@ const WeatherHack = ({ weatherData }) => {
 
     return (
         <div className="hack-container">
-            <div>
-                <p className="hack-title">Weather Hack!</p>
-            </div>
+            <h4 className="hack-title">Weather Hack!</h4>
             <div className="weather-hack">
                 <div className="hack">
                     <div>
