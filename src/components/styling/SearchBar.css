@@ -1,3 +1,21 @@
 .searchIconBtn {
     display: inline;
+    background-color: #D9D9D9;
+    border: 1px solid grey;
+    padding: 5px 7px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#searchField {
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 20px;
+}
+
+#searchField:focus {
+    outline: none;
+    box-shadow: 0 0 5px grey;
 }

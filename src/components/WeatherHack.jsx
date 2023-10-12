@@ -11,7 +11,7 @@ const WeatherHack = ({ weatherData }) => {
             case "thunderstorm":
                 return("When thunder roars, go indoors!")
             case "drizzle":
-                return("Drizzel alert: Bring an umbrella")
+                return("Drizzle alert: Bring an umbrella")
             case "rain":
                 return("Bring an umbrella!")
             case "snow":

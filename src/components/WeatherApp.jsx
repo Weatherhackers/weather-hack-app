@@ -15,7 +15,7 @@ export default function WeatherApp() {
         return (
             <div>
             <div>
-                <SearchBar setWeatherData={setWeatherData} />
+                <SearchBar weatherData={weatherData} setWeatherData={setWeatherData} />
             </div>
             <div className="weatherAndIcon">
                 <Condition weatherData={weatherData} />

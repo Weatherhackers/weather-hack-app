@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './styling/SearchBar.css';
 import { ApiContext } from '../contexts/ApiContext';
 
-export default function SearchBar({ setWeatherData }) {
+export default function SearchBar({ weatherData, setWeatherData }) {
 
   // API URL
   const {api} = useContext(ApiContext);
@@ -27,6 +27,33 @@ export default function SearchBar({ setWeatherData }) {
     setWeatherData(data);
   }
 
+  function getColor() {
+    if (weatherData && weatherData.coord) {
+        if(weatherData.weather[0].icon === "01d") //to distinguish clear day from clear night
+            return("#FF753E");
+
+        let main = weatherData.weather[0].main.toLowerCase()
+    
+        switch (main) {
+            case "thunderstorm":
+                return("#CEC6EC")
+            case "rain":
+                return("#5F91CF");
+            case "drizzle":
+                return("#5F91CF");
+            case "snow":
+                return("#4665B4");
+            case "clear":
+                return("#A689D6");
+            case "clouds":
+                return("#2AB690");
+            default:
+                return("#2A9645")
+        }
+    }
+
+  }
+
   return (
     <div>
       <form onSubmit={search}>
@@ -35,6 +62,7 @@ export default function SearchBar({ setWeatherData }) {
         name="searchField"
         id="searchField"
         placeholder="Search a city"
+        style={{backgroundColor: getColor()}}
         />
         <button className="searchIconBtn">
           <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
