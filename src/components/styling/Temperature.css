@@ -1,4 +1,5 @@
 .temperature {
     font-size: 72px;
     font-weight: 700;
+    cursor: pointer;
 }
