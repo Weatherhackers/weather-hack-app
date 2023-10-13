@@ -1,4 +1,4 @@
-
+import "./styling/Icon.css";
 
 export default function Icon({ weatherData }){
     let icons = {
@@ -51,6 +51,10 @@ export default function Icon({ weatherData }){
             return icons.mist;
     }
 
-    if(weatherData.weather[0].icon) 
-        return (<div>{getIcon(weatherData)}</div>)
+    if(weatherData.weather[0].icon) {
+        return (
+        <div>
+            {getIcon(weatherData)}
+        </div>)
+    }
 }
