@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function WindSpeed({ windData }) {
-  console.log(windData); 
+  // console.log(windData); 
 
   if (windData && windData.speed) {
     return (
