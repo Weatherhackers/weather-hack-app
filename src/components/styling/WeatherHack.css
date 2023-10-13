@@ -38,4 +38,19 @@
       font-size: 14px; 
     }
   }
+
+  /* For screen widths below 394px */
+@media screen and (max-width: 394px) {
+    .hack-description {
+      font-size: 13px; 
+    }
+  }
+
+  
+/* For screen widths below 332px */
+@media screen and (max-width: 332px) {
+    .bi-bi-person-raised-hand {
+      height: 50px; /* Adjust the height as per your preference */
+    }
+  }
   
