@@ -6,6 +6,10 @@ const WeatherHack = ({ weatherData }) => {
 
     // Weather Hack logic
     function getWeatherHack({weatherData}) {
+        // To distinguish clear night from clear day
+        if (weatherData.weather[0].icon === "01n")
+            return("Have a nice night!")
+
         let weatherMain = weatherData.weather[0].main.toLowerCase();
         switch (weatherMain) {
             case "thunderstorm":
