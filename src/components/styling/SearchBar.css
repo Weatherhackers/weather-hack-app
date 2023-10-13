@@ -4,25 +4,26 @@
     .row {
         flex-wrap: nowrap;
     }
-
-    .row > * {
-        /* flex-shrink: 1; */
-    }
 }
 
-#searchIconBtn {
-    background-color: #d9d9d9;
-    border: 0;
-    padding: 1rem 1rem;
-    
-    #searchIcon {
-        color: #414a55;
+#buttonCol {
+    width: 70px;
+    margin-left: 5px;
+
+    #searchIconBtn {
+        background-color: #d9d9d9;
+        border: 0;
+        padding: 1rem 1rem;
+        
+        #searchIcon {
+            color: #414a55;
+        }
     }
 }
 
 #searchField {
     background-color: #5f91cf;
-    border-radius: 15px;
+    border-radius: 1rem;
     padding: 1em;
     border-style: none;
     color: #fff;

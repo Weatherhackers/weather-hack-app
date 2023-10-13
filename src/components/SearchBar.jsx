@@ -6,6 +6,7 @@ import {
   Col,
   Form,
   FormControl,
+  InputGroup,
   Row,
 } from "react-bootstrap";
 
@@ -63,7 +64,8 @@ export default function SearchBar({ weatherData, setWeatherData }) {
   return (
     <Form onSubmit={search} id="searchForm">
         <Row>
-          <Col xs={10}>
+          <InputGroup>
+          <Col>
             <FormControl
               size="lg"
               type="text"
@@ -73,12 +75,13 @@ export default function SearchBar({ weatherData, setWeatherData }) {
               placeholder="Search a city"
               style={{ backgroundColor: getColor() }}
             />
-          </Col>
-          <Col>
+            </Col>
+            <Col xs={1} id="buttonCol">
             <Button
               size="lg"
               className="shadow-sm rounded-circle"
               id="searchIconBtn"
+              type="submit"
             >
               <svg
                 id="searchIcon"
@@ -93,6 +96,7 @@ export default function SearchBar({ weatherData, setWeatherData }) {
               </svg>
             </Button>
           </Col>
+            </InputGroup>
         </Row>
     </Form>
   );
