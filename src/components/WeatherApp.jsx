@@ -31,7 +31,7 @@ export default function WeatherApp() {
         <Row>
           <Col sm={12} md={6}>
             <Row>
-              <DateTime />
+              <DateTime weatherData={weatherData}/>
             </Row>
             <Row>
               <Icon weatherData={weatherData} />

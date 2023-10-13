@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ApiProvider from './contexts/ApiContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './scss/custom.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import ApiProvider from "./contexts/ApiContext";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/custom.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ApiProvider>
-      <App />
+        <App />
     </ApiProvider>
   </React.StrictMode>
 );
