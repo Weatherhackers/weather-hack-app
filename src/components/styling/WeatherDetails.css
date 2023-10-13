@@ -6,7 +6,7 @@
     margin: 20px auto 50px;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 20px rgba(223, 223, 223, 0.3);
+    box-shadow: 0 0 80px rgba(34, 43, 38, 0.3);
 
     > div > p {
         margin-bottom: 0;
@@ -16,4 +16,6 @@
 .details-title {
    letter-spacing: 2px;
    font-weight: 700;
+   text-decoration: underline;
+   text-decoration-thickness: 3px;
 }

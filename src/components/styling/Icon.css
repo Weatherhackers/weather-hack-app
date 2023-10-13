@@ -1,0 +1,16 @@
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+    .icon {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* For laptop screens and above */
+  @media screen and (min-width: 768px) {
+    .icon {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
