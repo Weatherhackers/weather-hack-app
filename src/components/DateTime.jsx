@@ -27,7 +27,7 @@ export default function DateTime({weatherData}) {
     // console.log(`locationDateTime is ${locationDateTime}`)
 
     const currentDate = new Intl.DateTimeFormat(undefined, {day: 'numeric', month: 'short', year: 'numeric'}).format(locationDateTime);
-    const currentTime = new Intl.DateTimeFormat(undefined, {hour: 'numeric', hourCycle: 'h12', minute: 'numeric', timeZoneName: 'short'}).format(locationDateTime).toUpperCase();
+    const currentTime = new Intl.DateTimeFormat(undefined, {hour: 'numeric', hourCycle: 'h12', minute: 'numeric'}).format(locationDateTime).toUpperCase();
 
     return (
         <div>
