@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+This repository was created as part of a one-week hackathon for [Coder Academy](https://coderacademy.edu.au/)'s full stack web development coding bootcamp.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hackathon
 
-## Available Scripts
+The Hackathon ran from 7 October 2023 to 13 October 2023.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+Created by:
+- [Carmina Familar](https://github.com/CarminaF)
+- [Emily Mehegan](https://github.com/e-mehegan)
+- [Stephen Gow](https://github.com/StevieG46)
+- [Helen Thai](https://github.com/hotteok219)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Our goal was to create an application that allowed users to search for a location and view the current weather details. The app would also return a weather hack depending on the conditions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Features include:
+- displaying a weather hack, depending on the weather condition
+- displaying details around the wind speed and humidity
+- the ability to toggle between Celsius and Fahrenheit by clicking on the temperature
+- displaying the current date and time, depending on the location
+- colour changes on the UI, depending on the weather condition.
 
-### `npm test`
+The application uses a 3rd party API - [OpenWeather](https://openweathermap.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can view the deployed app at [weather-hack-app.netlify.app](https://weather-hack-app.netlify.app/).
 
-### `npm run build`
+## Tech stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="48" alt="HTML5 logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="48" alt="CSS3 logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="48" alt="Sass logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" alt="JavaScript logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="48" alt="Node.js logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="48" alt="React logo" />     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="48" alt="Bootstrap logo" />
+          
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Landing page
 
-### `npm run eject`
+![A screenshot of the landing page via desktop](./docs/screenshot_home_desktop_thumb.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![A screenshot of the landing page via mobile](./docs/screenshot_home_mobile_thumb.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Weather details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![A screenshot of the weather details via desktop](./docs/screenshot_location1_desktop_thumb.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![A screenshot of the weather details via mobile](./docs/screenshot_location1_mobile_thumb.jpg)
